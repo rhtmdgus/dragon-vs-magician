@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bae0d690ad62f2845b79bf58e786187d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 300297
+  packageName: Draco Magician 2d Animated Character (Spriter)
+  packageVersion: 1.0.0.1
+  assetPath: Assets/Draco Magician/Animation/000.controller
+  uploadId: 702315
