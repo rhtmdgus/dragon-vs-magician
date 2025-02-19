@@ -2,22 +2,21 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
+    public int column;  // X 좌표 (가로)
+    public int row;     // Y 좌표 (세로)
+    private Board board; 
     private SpriteRenderer spriteRenderer;
-    public int row, col; // 블록의 위치 정보
-    public Sprite[] blockSprites; // 다양한 블록 스프라이트
 
     void Start()
     {
+        board = FindObjectOfType<Board>(); // 보드 스크립트 찾기
         spriteRenderer = GetComponent<SpriteRenderer>();
-        AssignRandomSprite();
     }
 
-    void AssignRandomSprite()
+    public void SetPosition(int x, int y)
     {
-        if (blockSprites.Length > 0)
-        {
-            int randomIndex = Random.Range(0, blockSprites.Length);
-            spriteRenderer.sprite = blockSprites[randomIndex];
-        }
+        column = x;
+        row = y;
+        transform.position = new Vector2(x, y);
     }
 }
